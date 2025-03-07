@@ -1,0 +1,748 @@
+:root{
+    --primary: #007bff;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact-info a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.cta-btn{
+    border-radius: 15px;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+#Home {
+    position: relative;
+    background-image: url("pics/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+#Home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px ;
+}
+
+
+#Home h1 {
+    font-weight: 700;
+    color: #292944;
+}
+
+#Home h4 {
+    color: #ffffff;
+}
+
+.card1 {
+    color: #1a2b50;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    height: 350px;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+}
+.cards {
+    background: white;
+  
+    border-radius: 15px;
+    opacity: 0.8;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.cards h3{
+    color: #1a2b50;
+    font-weight: 700;
+}
+.cards p{
+    color: #555;
+    line-height: 1.6;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+}
+
+
+.btn-light {
+    color: var(--primary);
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        max-width: 90%;
+    }
+}
+
+
+
+#About {
+    padding: 50px 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-image {
+    position: relative;
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play-button i {
+    color: white;
+    font-size: 24px;
+}
+
+.info {
+    width: 50%;
+}
+
+.info h1 {
+    color: #1a2b50;
+    font-size: 28px;
+}
+
+.info p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.LIST {
+    margin-top: 20px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.info-list i {
+    font-size: 30px;
+    color: #0066ff;
+}
+
+.info-list h4 {
+    font-size: 18px;
+    color: #1a2b50;
+    margin: 0;
+}
+
+.info-list p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+#numbers {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+#numbers .card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+}
+
+#numbers .card:hover {
+    transform: translateY(-5px);
+}
+
+#numbers .card i {
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #0066ff;
+    border-radius: 50%;
+    padding:12px;
+    position: absolute;
+    top: -30px;
+    align-self:center;
+    
+}
+
+#numbers.card-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+#numbers .card-text {
+    font-size: 18px;
+    color: #666;
+}
+
+#Services{
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 30px;
+}
+#Services h2{
+  text-align: center;
+  color: #364c7c;
+  font-weight: 700;
+}
+#Services h3{
+  text-align: center;
+    color: #1a2b50;
+    font-weight: 600;
+}
+#Services p{
+    text-align: center;
+      font-weight: 600;
+      margin-bottom: 50px;
+  }
+#Services hr{
+    width: 150px;
+    margin:15px  auto;
+}
+
+#Services .card {
+    background: white;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    position: relative;
+    height: 350px;
+
+}
+
+#Services .card i {
+    font-size: 25px;
+    color: #ffffff;
+    background-color:#007bff;
+    border-radius: 10px;
+    padding:12px;
+    position: absolute;
+    top: 10px;
+    align-self: center;
+    
+    
+}
+
+#Services .card:hover {
+    background:#0066ff;
+    color: white;
+  
+}
+
+#Services .card:hover i{
+    color:  #1a2b50;
+    background-color:white ;
+}
+
+#Appointment{
+    margin: auto;
+    justify-content: center;
+}
+
+#Appointment h2{
+    color: #364c7c;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+#Appointment h3{
+    text-align: center;
+      color: #1a2b50;
+      font-weight: 600;
+  }
+
+  #Appointment p{
+      text-align: center;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+  
+#Appointment hr{
+      width: 180px;
+      margin:15px  auto;
+  
+}
+#Appointment .cta-btn{
+    padding: 5px;
+    justify-content: center;
+    width: 300px;
+    margin: 1px 470px;
+}
+#Departments .card{
+border: none;
+}
+
+#Departments h2{
+    text-align: center;
+    color: #364c7c;
+    font-weight: 700;
+      margin-top: 50px;
+  }
+  
+  #Departments h3{
+    text-align: center;
+      color: #1a2b50;
+      font-weight: 600;
+  }
+
+#Departments p{
+      text-align: center;
+        font-weight: 600;
+        margin-bottom: 50px;
+}
+#Departments hr{
+    width: 180px;
+    margin: auto;
+
+}
+#Departments ul {
+list-style: none;
+line-height: 40px;
+font-weight: 500;
+color: #5e5e5e;
+cursor: pointer;
+}
+#Departments ul span{
+    color:#0066ff;
+}
+#Departments .card-title{
+    text-align: left;
+    font-size: 30px;
+}
+#Departments .card-text{
+    color: #5e5e5e;
+    text-align: left;
+}
+#Departments img{
+    width: 280px;
+    height: 280px;
+    float: right;
+}
+
+
+#Doctors .row{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+}
+
+#Doctors h2{
+    text-align: center;
+      color: #364c7c;
+      font-weight: 700;
+      margin-top: 50px;
+  }
+  
+#Doctors h3{
+  margin-top: 20px;
+  color: #1a2b50;
+  font-weight: 600;
+  }
+
+#Doctors p{
+      text-align: center;
+        font-weight: 600;
+        margin-bottom: 50px;
+        font-style: italic;
+}
+#Doctors hr{
+    width: 150px;
+    margin:15px  auto;
+}
+#Doctors .card{
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    transition:  0.4s ease-in-out;
+    border: none;
+    padding: 20px;
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    position: relative;
+    margin-left: 7px;
+}
+#Doctors .card:hover{
+    transform: translateY(-15px);
+    background-color:#007bff;
+}
+#Doctors .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Doctors .card img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: sticky;
+
+}
+
+#Doctors .card h4 {
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+}
+#Doctors .card p {
+    text-align: left;
+    margin-top: 10px;
+    color: #444;
+}
+#Doctors .card .chr{
+   margin: 10px 0px;
+}
+
+#Doctors .card ul{
+    list-style: none;
+    display: flex;
+    gap: 3px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#Doctors .card li {
+    width: 40px;
+    height: 40px;
+    background-color: #ececec;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+#Doctors .card-list li  :hover {
+    background-color:#0066ff;
+}
+#Doctors .card i {
+    color: #4d4d4d;
+    border-radius: 50%;
+    justify-content: center;
+    margin: auto;
+}
+#Doctors .card-list li:hover i {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #Doctors .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Doctors .card img {
+        margin-bottom: 10px;
+    }
+
+    #Doctors .card-list ul {
+        justify-content: center;
+    }
+}
+
+#Questions{
+    background-color: #d8e4f5;
+    height: 1000px;
+}
+
+#Questions h2{
+    text-align: center;
+      color: #364c7c;
+      font-weight: 700;
+      margin-top: 50px;
+  }
+  
+
+#Questions p{
+      text-align: center;
+        font-weight: 600;
+        margin-bottom: 50px;
+        font-style: italic;
+}
+#Questions hr{
+    width: 250px;
+    margin:15px  auto;
+}
+
+#Questions .row{
+   margin: auto;
+
+}
+#Questions .card-text p{
+    text-align: left;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-size: xx-small;
+}
+
+#Questions .card{
+background-color: #3174bb;
+color: #ffffff;
+height: 120px;
+margin: 10px;
+}
+#Questions .card-x{
+    background-color: white;
+    border: #3e4961;
+    color: #1a2b50;
+}
+
+#Testimonials h2{
+    color: #1a2b50;
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 30px;
+} 
+
+#Gallery{
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-evenly;
+}
+
+#Gallery h2{
+    text-align: center;
+      color: #364c7c;
+      font-weight: 700;
+      margin-top: 50px;
+  }
+  
+
+#Gallery p{
+      text-align: center;
+        font-weight: 600;
+        margin-bottom: 50px;
+        font-style: italic;
+}
+#Gallery hr{
+    width: 250px;
+    margin:15px  auto;
+}
+
+#Gallery .gallery-item{
+   margin: 2px;
+    transition: ease-out 0.7s;
+}
+#Gallery .gallery-item :hover  {
+    transform: scale(1.1);
+    transition: ease-out 0.3s;
+}
+iframe{
+    margin-bottom: 100px;
+}
+
+#Contact{
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+#Contact h2{
+    text-align: center;
+      color: #364c7c;
+      font-weight: 700;
+      margin-top: 50px;
+  }
+  
+
+#Contact p{
+      text-align: center;
+        font-weight: 600;
+        margin-bottom: 50px;
+        font-style: italic;
+}
+
+#Contact hr{
+    width: 250px;
+    margin:15px  auto;
+}
+
+#Contact ul{
+    line-height: 50px;
+   
+}
+#Contact ul li{
+    color: #2f4b87;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Contact ul li i{
+   background-color: #007bff;
+   border-radius: 50%;
+   padding: 10px;
+   color: #ffffff;
+   transition: 0.2s ease-in-out;
+}
+#Contact ul li i:hover{
+    background-color: #7b80a5;
+    color:#1a2b50;
+    padding: 12px;
+}
+#Contact form .cta-btn{
+    margin: auto;
+    padding: 10px;
+    width:200px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: #cfdeee;
+    color: #3a3a3a;
+    padding: 40px 0;
+    min-height: 250px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.footer .col-4 {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer .col-8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 2;
+}
+
+
+.footer .col-3 {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    font-size: 14px;
+    color: #4f5d75;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer ul li:hover {
+    color: #007bff;
+}
+
+
+.social-list ul {
+    display: flex;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-list ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.social-list ul li a {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+.social-list ul li a:hover {
+    background: #007bff;
+    color: white;
+}
+
+
+.footer hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+
+.footer .Copyright {
+    text-align: center;
+    margin: 1px 300px;
+    font-size: 14px;
+    color: #4f5d75;
+}
